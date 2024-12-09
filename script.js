@@ -42,7 +42,11 @@ function 新任務() {
   }
 });
 
- 
+
+//把字串存進 LocalStorage
+var str= "文字欄"; 
+localStorage.setItem( "文字欄",str);
+console.log(localStorage.getItem("文字欄"));
 
 
 
