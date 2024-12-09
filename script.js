@@ -18,7 +18,7 @@ function 新任務() {
 
     垃圾桶.addEventListener("click", function() {
     任務.remove();
-     });
+  });
 
   打勾方塊.addEventListener("click", function() {
     if(打勾方塊.checked) {
@@ -42,11 +42,13 @@ function 新任務() {
   }
 });
 
-
 //把字串存進 LocalStorage
 var str= "文字欄"; 
 localStorage.setItem( "文字欄",str);
 console.log(localStorage.getItem("文字欄"));
+
+
+
 
 
 
