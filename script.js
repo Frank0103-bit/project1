@@ -49,10 +49,10 @@ function 新任務() {
 
 // 儲存代辦事項
 function saveTodos() {
-  const todos = document.querySelectorAll("ul");
+  const todos = document.querySelectorAll(".清單 li");
   const todoList = [];
   todos.forEach(todo => {
-      todoList.push(todo.textContent);
+      todoList.push(todo.querySelector("label").textContent);
   });
   localStorage.setItem("todos", JSON.stringify(todoList)); // 將陣列轉成字串儲存
 }
@@ -68,14 +68,22 @@ function loadTodos() {
   }
 }
 
+// 按鈕與 Enter 鍵事件
+按鈕.addEventListener("click", 新任務);
+文字欄.addEventListener("keyup", function(e) {
+  if (e.key === "Enter") {
+    新任務();
+  }
+});
+
 // 初始化時載入事項
 loadTodos();
 
 // 範例：當新增代辦事項時自動儲存
-document.querySelector('button').addEventListener('click', () => {
-  addTodoToPage(inputValue); // 新增到頁面
-  saveTodos(); // 更新儲存
-});
+//document.querySelector('button').addEventListener('click', () => {
+  //addTodoToPage(inputValue); // 新增到頁面
+  //saveTodos(); // 更新儲存
+//});
 
 
 
