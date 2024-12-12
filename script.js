@@ -54,12 +54,12 @@ function saveTodos() {
   todos.forEach(todo => {
       todoList.push(todo.textContent);
   });
-  localStorage.setItem('todos', JSON.stringify(todoList)); // 將陣列轉成字串儲存
+  localStorage.setItem("todos", JSON.stringify(todoList)); // 將陣列轉成字串儲存
 }
 
 // 讀取代辦事項
 function loadTodos() {
-  const savedTodos = localStorage.getItem('todos');
+  const savedTodos = localStorage.getItem("todos");
   if (savedTodos) {
       const todoList = JSON.parse(savedTodos); // 將字串轉回陣列
       todoList.forEach(todo => {
