@@ -43,11 +43,39 @@ function 新任務() {
 });
 
 //把字串存進 LocalStorage
-var str= "文字欄"; 
-localStorage.setItem( "文字欄",str);
-console.log(localStorage.getItem("文字欄"));
+//var str= "文字欄"; 
+//localStorage.setItem( "文字欄",str);
+//console.log(localStorage.getItem("文字欄"));
 
+// 儲存代辦事項
+function saveTodos() {
+  const todos = document.querySelectorAll("ul");
+  const todoList = [];
+  todos.forEach(todo => {
+      todoList.push(todo.textContent);
+  });
+  localStorage.setItem('todos', JSON.stringify(todoList)); // 將陣列轉成字串儲存
+}
 
+// 讀取代辦事項
+function loadTodos() {
+  const savedTodos = localStorage.getItem('todos');
+  if (savedTodos) {
+      const todoList = JSON.parse(savedTodos); // 將字串轉回陣列
+      todoList.forEach(todo => {
+          addTodoToPage(todo); // 顯示到頁面上的函式
+      });
+  }
+}
+
+// 初始化時載入事項
+loadTodos();
+
+// 範例：當新增代辦事項時自動儲存
+document.querySelector('button').addEventListener('click', () => {
+  addTodoToPage(inputValue); // 新增到頁面
+  saveTodos(); // 更新儲存
+});
 
 
 

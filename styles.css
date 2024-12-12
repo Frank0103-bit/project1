@@ -64,7 +64,6 @@ body{
 .垃圾桶:hover {
     opacity: 1;
 }
-
 /* 響應式設計語法*/
 @media screen and (max-width:768px) {
     
