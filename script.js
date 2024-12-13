@@ -79,6 +79,22 @@ function loadTodos() {
 // 初始化時載入事項
 loadTodos();
 
+// 手動測試儲存與載入功能
+saveTodos(); // 呼叫儲存代辦事項
+console.log(localStorage.getItem("todos")); // 應該輸出存入的代辦事項
+
+loadTodos(); // 呼叫載入代辦事項
+console.log(document.querySelector(".清單").innerHTML); // 應該輸出清單的 HTML 結構
+
+
+
+
+
+
+
+
+
+//-----------------------
 // 範例：當新增代辦事項時自動儲存
 //document.querySelector('button').addEventListener('click', () => {
   //addTodoToPage(inputValue); // 新增到頁面
