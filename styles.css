@@ -1,68 +1,105 @@
-body{
-    background-color: #89A8B2;
-    display:flex;
-    justify-content:center;
+/* *整體預設-----------------------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #4f7480;
+  color: #eee;
+  width: 100%;
+  height: 120px;
+}
+
+header h1 {
+  background-color: #4f7480;
+  color: white;
+  font-size: 5rem;
+}
+
+/* 
+  header p{
+    background-color: aquamarine;
+    display: inline-block;
+    margin-left: 50%;
+  }
+ */
+
+body {
+  background-color: #89a8b2;
+  margin: 0;
+  display: block;
+  /*justify-content:center;*/
 }
 
 .操做面板 {
-    background-color: #b3c8cf;
-    height: 600px;
-    border-width: 600px;
-    padding-top: 10px;
-    padding-left: 150px;
-    padding-right: 150px;
-    border-radius: 10px;
+  background-color: #b3c8cf;
+  min-height: 500px;
+  width: 58%;
+  /*border-width:100px;  定義框的粗細*/
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-top: 0;
+  margin-left: 2%;
+  overflow: visible;
+  overflow: hidden;
+  float: left;
 }
 
 .輸入區域 {
-    display:flex;
-    border-radius: 30px;
-    overflow:hidden;
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 .文字欄 {
-    height: 20px;
-    width: 500px;
-    flex-grow: 1;
-    border: none;
-    background-color: #e5e1da;
-    padding: 10px 15px;
-    outline: none;
+  height: 50px;
+  width: 500px;
+  flex-grow: 1;
+  border: none;
+  background-color: #e5e1da;
+  padding: 10px 15px;
+  outline: none;
 }
 
-
 .按鈕 {
-    background-color: #f1f0e8;
-    border:none;
-    color: rgb(240, 140, 106);
-    padding: 10px 15px;
-    cursor:pointer;
+  background-color: #f1f0e8;
+  border: none;
+  color: rgb(240, 140, 106);
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
 .清單 {
-    list-style-type: none;
-    padding: 0%;
+  list-style-type: none;
+  padding: 0%;
 }
 .清單 li {
-    display: flex;
-    padding: 5px;
-    border-bottom: 1px solid #eee;
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
 }
 .清單 label {
-    flex-grow: 1;
-
+  flex-grow: 1;
 }
 .打勾方塊 {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 .垃圾桶 {
-    background: none;
-    border: none;
-    cursor: pointer;
-    opacity: 0.5;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
 }
 .垃圾桶:hover {
-    opacity: 1;
+  opacity: 1;
 }
 /* 響應式設計語法
 @media screen and (max-width:768px) {
