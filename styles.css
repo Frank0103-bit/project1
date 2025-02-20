@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Qwitcher+Grypen:wght@400;700&family=Righteous&family=ZCOOL+QingKe+HuangYou&display=swap");
+
 /* *整體預設-----------------------------------------------------------------------------------------*/
 * {
   margin: 0;
@@ -7,50 +9,37 @@
 html {
   font-size: 16px;
   margin: 0;
-  padding: 0;
 }
 header {
   background-color: #4f7480;
   color: #eee;
   width: 100%;
-  height: 120px;
+  height: 100px;
 }
 
 header h1 {
-  background-color: #4f7480;
-  color: white;
+  font-family: "ZCOOL QingKe HuangYou", serif;
   font-size: 5rem;
+  text-align: center;
+  font-weight: 400;
 }
-
-/* 
-  header p{
-    background-color: aquamarine;
-    display: inline-block;
-    margin-left: 50%;
-  }
- */
 
 body {
   background-color: #89a8b2;
-  margin: 0;
-  display: block;
-  /*justify-content:center;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .操做面板 {
   background-color: #b3c8cf;
   min-height: 500px;
-  width: 58%;
+  min-width: 600px;
   /*border-width:100px;  定義框的粗細*/
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  margin-top: 0;
-  margin-left: 2%;
-  overflow: visible;
-  overflow: hidden;
-  float: left;
 }
 
 .輸入區域 {
