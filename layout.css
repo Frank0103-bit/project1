@@ -19,7 +19,7 @@ header h1 {
   color: white;
   font-weight: 400;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3.7rem;
   padding-top: 20px;
   padding-bottom: 10px;
 
@@ -58,7 +58,7 @@ body {
   background-color: #e5e1da;
   padding: 10px 25px;
   outline: none;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .按鈕 {
@@ -67,7 +67,7 @@ body {
   color: rgb(240, 140, 106);
   padding: 10px 15px;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .清單 {
@@ -122,7 +122,7 @@ body {
   .操做面板 {
     background-color: #b3c8cf;
     min-height: 750px;
-    min-width: 900px;
+    min-width: 750px;
     /*border-width:100px;  定義框的粗細*/
     padding-top: 10px;
     padding-left: 10px;
