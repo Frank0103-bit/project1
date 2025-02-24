@@ -45,7 +45,7 @@ body {
 
 .輸入區域 {
   display: flex;
-  border-radius: 20px;
+  border-radius: 20px 20px 20px 20px;
   overflow: hidden;
   padding-top: 2px;
 }
