@@ -51,14 +51,14 @@ body {
 }
 
 .文字欄 {
-  height: 60px;
+  height: 55px;
   width:200px;
   flex-grow: 1;
   border: none;
   background-color: #e5e1da;
   padding: 10px 25px;
   outline: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .按鈕 {
@@ -68,6 +68,10 @@ body {
   padding: 10px 15px;
   cursor: pointer;
   font-size: 1.7rem;
+}
+
+.按鈕 :hover{
+  transform: scale(0.8);
 }
 
 .清單 {
@@ -83,7 +87,7 @@ body {
   flex-grow: 1;
 }
 .打勾方塊 {
-  margin-right: 30px;
+  margin-right: 15px;
 }
 .垃圾桶 {
   background: none;
@@ -153,6 +157,10 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1.6rem;
+  }
+  
+  .按鈕 :hover{
+  transform: scale(1);
   }
 
   .清單 {
