@@ -35,7 +35,7 @@ body {
 .操做面板 {
   background-color: #b3c8cf;
   min-height:500px;
-  width: 500px;
+  width: min(100%,300px);
   border-width:100px;  /*定義框的粗細 */
   padding-top: 10px;
   padding-left: 10px;
@@ -51,14 +51,14 @@ body {
 }
 
 .文字欄 {
-  height: 75px;
+  height: 60px;
   width:200px;
   flex-grow: 1;
   border: none;
   background-color: #e5e1da;
   padding: 10px 25px;
   outline: none;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .按鈕 {
