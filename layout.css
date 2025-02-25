@@ -59,6 +59,7 @@ body {
   padding: 10px 25px;
   outline: none;
   font-size: 1.3rem;
+  border-radius: 20px 0px 0px 20px;
 }
 
 .按鈕 {
