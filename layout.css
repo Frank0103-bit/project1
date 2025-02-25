@@ -35,12 +35,14 @@ body {
 .操做面板 {
   background-color: #b3c8cf;
   min-height:500px;
-  width: min(100%,300px);
+  width: 100%;
+  max-width: 310px;
   border-width:100px;  /*定義框的粗細 */
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 9px;
+  overflow-wrap: break-word;
 }
 
 .輸入區域 {
@@ -71,18 +73,17 @@ body {
   font-size: 1.7rem;
 }
 
-.按鈕 :hover{
-  transform: scale(0.8);
-}
-
 .清單 {
   list-style-type: none;
-  padding: 0%;
+  padding: 0;
 }
 .清單 li {
   display: flex;
+  flex-direction: column;
   padding: 5px;
   border-bottom: 1px solid #eee;
+  word-wrap: break-word;
+  width: 100%;
 }
 .清單 label {
   flex-grow: 1;
@@ -159,17 +160,15 @@ body {
     cursor: pointer;
     font-size: 1.6rem;
   }
-  
-  .按鈕 :hover{
-  transform: scale(1);
-  }
 
   .清單 {
     list-style-type: none;
     padding: 0%;
+    white-space: normal;
   }
   .清單 li {
     display: flex;
+    flex-direction: column;
     padding: 5px;
     border-bottom: 1px solid #eee;
   }
@@ -177,7 +176,9 @@ body {
     flex-grow: 1;
   }
   .打勾方塊 {
-    margin-right: 30px;
+    display: flex;
+    align-items: flex-start;
+    /* margin-right: 10px; */
   }
   .垃圾桶 {
     background: none;
